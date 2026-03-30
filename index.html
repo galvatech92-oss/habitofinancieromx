@@ -56,8 +56,8 @@
     }
     .card-hover-effect:hover {
       transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 20px 40px -15px rgba(236, 72, 153, 0.25);
-      border-color: rgba(236, 72, 153, 0.3);
+      box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.25); /* Sombra azul */
+      border-color: rgba(37, 99, 235, 0.3);
     }
 
     @keyframes fade-in-up {
@@ -75,29 +75,31 @@
     }
   </style>
 </head>
-<body class="font-sans text-slate-800 bg-slate-50 min-h-screen selection:bg-pink-500 selection:text-white overflow-x-hidden">
+<body class="font-sans text-slate-800 bg-slate-50 min-h-screen selection:bg-blue-600 selection:text-white overflow-x-hidden">
 
   <!-- Navigation -->
   <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 bg-transparent py-6">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <div class="text-2xl font-extrabold tracking-tighter relative group cursor-pointer">
-        <span id="nav-text-1" class="transition-colors duration-300 text-white">Hábito</span>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600 group-hover:from-purple-600 group-hover:to-pink-500 transition-all duration-500">Financiero</span>
-        <span id="nav-text-2" class="transition-colors duration-300 text-white/70 text-sm ml-1">.mx</span>
+      <div class="flex items-center gap-3 text-2xl font-extrabold tracking-tighter relative group cursor-pointer">
+        <img src="logo.png" alt="Logo" class="h-8 w-auto object-contain" onerror="this.style.display='none'">
+        <div>
+          <span id="nav-text-1" class="transition-colors duration-300 text-white">Hábito</span>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-600 group-hover:from-cyan-600 group-hover:to-blue-500 transition-all duration-500">Financiero</span>
+        </div>
       </div>
-      <a href="#contacto" class="hidden md:inline-flex bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-500 hover:to-purple-600 text-white px-7 py-3 rounded-full font-bold transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 items-center gap-2">
+      <a href="#contacto" class="hidden md:inline-flex bg-gradient-to-r from-blue-600 to-cyan-700 hover:from-blue-500 hover:to-cyan-600 text-white px-7 py-3 rounded-full font-bold transition-all transform hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 items-center gap-2">
         <i data-lucide="phone" class="w-4 h-4 animate-pulse"></i> Asesoría Inicial
       </a>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-[#0f0c29]">
+  <section class="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-slate-900">
     <!-- Animated Background Gradients -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#c90076] via-[#3b1c8a] to-[#0f0c29] opacity-90"></div>
-    <div class="absolute top-0 -left-4 w-96 h-96 bg-pink-500 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob"></div>
-    <div class="absolute top-0 -right-4 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob animation-delay-2000"></div>
-    <div class="absolute -bottom-8 left-20 w-96 h-96 bg-indigo-500 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob animation-delay-4000"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] via-[#0f172a] to-[#020617] opacity-90"></div>
+    <div class="absolute top-0 -left-4 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob"></div>
+    <div class="absolute top-0 -right-4 w-96 h-96 bg-cyan-600 rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-8 left-20 w-96 h-96 bg-sky-500 rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob animation-delay-4000"></div>
     
     <!-- Floating Background Icons -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -108,21 +110,21 @@
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
-        <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-pink-200 text-sm font-semibold tracking-wide uppercase animate-float">
+        <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-blue-200 text-sm font-semibold tracking-wide uppercase animate-float">
           Transforma tu relación con el dinero
         </div>
         <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 reveal-on-scroll">
-          Edúcate financieramente para vivir <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-white">dignamente.</span>
+          Edúcate financieramente para vivir <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-200">dignamente.</span>
         </h1>
-        <p class="text-xl md:text-2xl text-indigo-100/90 mb-10 font-light reveal-on-scroll delay-100 max-w-2xl mx-auto">
-          Construye hábitos saludables. Date esos gustos que siempre quisiste sin enviar a tus finanzas a terapia intensiva.
+        <p class="text-xl md:text-2xl text-slate-300 mb-10 font-light reveal-on-scroll delay-100 max-w-2xl mx-auto">
+          Construye hábitos saludables. Date esos gustos que siempre quisiste sin enviar a tus finanzas a un problema grave.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-5 reveal-on-scroll delay-200">
-          <a href="#servicios" class="group relative px-8 py-4 bg-white text-indigo-950 rounded-full font-bold text-lg overflow-hidden transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] hover:scale-105">
+          <a href="#servicios" class="group relative px-8 py-4 bg-white text-slate-900 rounded-full font-bold text-lg overflow-hidden transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] hover:scale-105">
             <span class="relative z-10 flex items-center justify-center gap-2">
-              Aprender a Invertir <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+              Aprender a Invertir <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform text-blue-600"></i>
             </span>
-            <div class="absolute inset-0 h-full w-full bg-gradient-to-r from-pink-100 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-50 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
           <a href="#contacto" class="px-8 py-4 border border-white/30 text-white rounded-full font-bold text-lg transition-all hover:bg-white/10 hover:border-white/60 backdrop-blur-sm flex items-center justify-center">
             Conocer a Antonio
@@ -143,14 +145,14 @@
 
   <!-- The Problem / Empathy Section -->
   <section id="servicios" class="py-24 bg-slate-50 relative overflow-hidden">
-    <div class="absolute top-20 right-[-10%] w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-pink-100 to-purple-50 opacity-50 blur-3xl"></div>
+    <div class="absolute top-20 right-[-10%] w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-blue-100 to-cyan-50 opacity-50 blur-3xl"></div>
     
     <div class="container mx-auto px-6 relative z-10">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div class="reveal-on-scroll">
-          <div class="inline-block bg-pink-100 text-pink-600 px-4 py-1.5 rounded-full text-sm font-bold mb-6 tracking-wide uppercase shadow-sm">El Reto Actual</div>
+          <div class="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-bold mb-6 tracking-wide uppercase shadow-sm">El Reto Actual</div>
           <h2 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900 leading-tight">
-            ¿Tu primer empleo te trajo <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">estrés?</span>
+            ¿Tu primer empleo te trajo <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">estrés?</span>
           </h2>
           <p class="text-xl text-slate-600 mb-8 leading-relaxed font-light">
             ¿Sabías que una gran parte de la población en México al encontrar su primera fuente de ingresos terminan en deudas? De pronto llega el estrés que antes no tenían y los problemas para hacer rendir el dinero.
@@ -158,22 +160,22 @@
           <div class="space-y-5">
             <!-- ListItem 1 -->
             <div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-slate-100 transform transition-transform hover:-translate-y-1 hover:shadow-md reveal-on-scroll delay-100">
-              <div class="bg-pink-100 p-2 rounded-full shrink-0">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-600"></i>
+              <div class="bg-blue-100 p-2 rounded-full shrink-0">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600"></i>
               </div>
               <span class="text-slate-700 font-medium">El secreto para generar más dinero es conocer tus hábitos financieros.</span>
             </div>
             <!-- ListItem 2 -->
             <div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-slate-100 transform transition-transform hover:-translate-y-1 hover:shadow-md reveal-on-scroll delay-200">
-              <div class="bg-pink-100 p-2 rounded-full shrink-0">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-600"></i>
+              <div class="bg-blue-100 p-2 rounded-full shrink-0">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600"></i>
               </div>
               <span class="text-slate-700 font-medium">Aprende a gestionar de forma consciente y efectiva tus recursos.</span>
             </div>
             <!-- ListItem 3 -->
             <div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-slate-100 transform transition-transform hover:-translate-y-1 hover:shadow-md reveal-on-scroll delay-300">
-              <div class="bg-pink-100 p-2 rounded-full shrink-0">
-                <i data-lucide="check-circle-2" class="w-5 h-5 text-pink-600"></i>
+              <div class="bg-blue-100 p-2 rounded-full shrink-0">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-blue-600"></i>
               </div>
               <span class="text-slate-700 font-medium">Mejora tu toma de decisiones en ahorro, inversión, deuda y préstamos.</span>
             </div>
@@ -182,15 +184,15 @@
         
         <!-- Objective Glass Card -->
         <div class="reveal-on-scroll delay-300 relative">
-          <div class="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-600 rounded-[2rem] transform rotate-3 scale-105 opacity-20 blur-lg animate-pulse"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-[2rem] transform rotate-3 scale-105 opacity-20 blur-lg animate-pulse"></div>
           <div class="glass-panel p-10 md:p-14 rounded-[2rem] shadow-2xl relative overflow-hidden group">
-            <div class="absolute -right-10 -top-10 w-40 h-40 bg-pink-500 rounded-full mix-blend-multiply filter blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-700"></div>
-            <div class="bg-gradient-to-br from-indigo-100 to-pink-100 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-inner">
-              <i data-lucide="target" class="w-10 h-10 text-indigo-600"></i>
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
+            <div class="bg-gradient-to-br from-blue-100 to-cyan-100 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 shadow-inner">
+              <i data-lucide="target" class="w-10 h-10 text-blue-700"></i>
             </div>
             <h3 class="text-3xl font-extrabold mb-6 text-slate-900">Nuestro Objetivo</h3>
             <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-              A través de sencillas herramientas, podrás gestionar de forma <strong class="text-pink-600">consciente y efectiva</strong> tus recursos monetarios con el fin de alcanzar tu bienestar financiero.
+              A través de sencillas herramientas, podrás gestionar de forma <strong class="text-blue-700">consciente y efectiva</strong> tus recursos monetarios con el fin de alcanzar tu bienestar financiero.
             </p>
             <div class="h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent my-6"></div>
             <p class="text-slate-700 font-medium text-lg">
@@ -208,7 +210,7 @@
     <div class="container mx-auto px-6 relative z-10">
       <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
         <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
-          ¿Tu negocio está dando <span class="text-pink-600">frutos?</span>
+          ¿Tu negocio está dando <span class="text-blue-600">frutos?</span>
         </h2>
         <p class="text-xl text-slate-500 font-light">
           Si iniciaste tu negocio y aún no sabes cómo controlar tus finanzas, aplica estos 3 consejos vitales para asegurar su crecimiento continuo.
@@ -218,9 +220,9 @@
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Tip 1 -->
         <div class="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/40 card-hover-effect reveal-on-scroll delay-100 group relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-50 to-purple-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
-          <div class="bg-pink-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-pink-600 group-hover:text-white transition-colors duration-500">
-            <i data-lucide="briefcase" class="w-10 h-10 text-pink-500 group-hover:text-white transition-colors duration-500"></i>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+          <div class="bg-blue-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="briefcase" class="w-10 h-10 text-blue-600 group-hover:text-white transition-colors duration-500"></i>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-slate-900">Separa tus finanzas</h3>
           <p class="text-slate-600 text-lg leading-relaxed font-light">No mezcles lo personal con el negocio. Comienza con una cuenta bancaria única exclusiva para tu empresa.</p>
@@ -228,9 +230,9 @@
 
         <!-- Tip 2 -->
         <div class="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/40 card-hover-effect reveal-on-scroll delay-200 group relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-50 to-purple-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
-          <div class="bg-pink-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-pink-600 group-hover:text-white transition-colors duration-500">
-            <i data-lucide="trending-up" class="w-10 h-10 text-pink-500 group-hover:text-white transition-colors duration-500"></i>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+          <div class="bg-blue-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="trending-up" class="w-10 h-10 text-blue-600 group-hover:text-white transition-colors duration-500"></i>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-slate-900">Piensa en el flujo</h3>
           <p class="text-slate-600 text-lg leading-relaxed font-light">La rentabilidad no lo es todo. Considera que el dinero entra y sale todo el tiempo. Mantén liquidez.</p>
@@ -238,9 +240,9 @@
 
         <!-- Tip 3 -->
         <div class="bg-white p-10 rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/40 card-hover-effect reveal-on-scroll delay-300 group relative overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-50 to-purple-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
-          <div class="bg-pink-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-pink-600 group-hover:text-white transition-colors duration-500">
-            <i data-lucide="shield-check" class="w-10 h-10 text-pink-500 group-hover:text-white transition-colors duration-500"></i>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-bl-full -z-10 group-hover:scale-110 transition-transform duration-500"></div>
+          <div class="bg-blue-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
+            <i data-lucide="shield-check" class="w-10 h-10 text-blue-600 group-hover:text-white transition-colors duration-500"></i>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-slate-900">Construye reservas</h3>
           <p class="text-slate-600 text-lg leading-relaxed font-light">Genera ahorros con porcentaje fijo (hasta un 5%) para sobrellevar cualquier imprevisto sin endeudarte.</p>
@@ -253,21 +255,21 @@
   <section class="py-24 bg-slate-900 text-white relative overflow-hidden flex items-center justify-center min-h-[50vh]">
     <div class="absolute inset-0 opacity-30">
       <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] animate-pulse"></div>
-      <div class="absolute -top-40 -right-40 w-96 h-96 bg-pink-600 rounded-full mix-blend-screen filter blur-[120px]"></div>
-      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-600 rounded-full mix-blend-screen filter blur-[120px]"></div>
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen filter blur-[120px]"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-600 rounded-full mix-blend-screen filter blur-[120px]"></div>
     </div>
     
     <div class="container mx-auto px-6 relative z-10 text-center max-w-5xl reveal-on-scroll">
-      <div class="inline-flex items-center justify-center p-4 bg-white/10 backdrop-blur-md rounded-full mb-8 border border-white/20 shadow-[0_0_30px_rgba(236,72,153,0.3)]">
-        <i data-lucide="lightbulb" class="w-10 h-10 text-pink-400"></i>
+      <div class="inline-flex items-center justify-center p-4 bg-white/10 backdrop-blur-md rounded-full mb-8 border border-white/20 shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+        <i data-lucide="lightbulb" class="w-10 h-10 text-blue-400"></i>
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-white to-pink-200">¿Sabías que?</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200">¿Sabías que?</h2>
       <blockquote class="text-3xl md:text-5xl font-light italic mb-12 leading-tight text-slate-300">
         "Fortunas como las de Jeff Bezos y Warren Buffet no se construyeron solo con el éxito de sus ideas, <br class="hidden md:block"/>
-        <span class="text-white font-semibold underline decoration-pink-500 underline-offset-8">un pilar importante fueron sus hábitos financieros.</span>"
+        <span class="text-white font-semibold underline decoration-blue-500 underline-offset-8">un pilar importante fueron sus hábitos financieros.</span>"
       </blockquote>
-      <div class="inline-block bg-gradient-to-r from-pink-600/30 to-purple-600/30 border border-pink-500/50 px-8 py-4 rounded-full backdrop-blur-md transform hover:scale-105 transition-transform cursor-default">
-        <p class="text-xl font-medium text-pink-100">
+      <div class="inline-block bg-gradient-to-r from-blue-600/30 to-cyan-600/30 border border-blue-500/50 px-8 py-4 rounded-full backdrop-blur-md transform hover:scale-105 transition-transform cursor-default">
+        <p class="text-xl font-medium text-blue-100">
           Ninguna cantidad de dinero será suficiente si no tienes el hábito de hacer que rinda.
         </p>
       </div>
@@ -276,7 +278,7 @@
 
   <!-- About The Expert -->
   <section id="sobre-mi" class="py-24 bg-slate-50 relative">
-    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
     <div class="container mx-auto px-6 relative z-10">
       <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200/50 border border-slate-100 flex flex-col lg:flex-row reveal-on-scroll">
         
@@ -286,8 +288,8 @@
           
           <div class="w-56 h-56 md:w-64 md:h-64 rounded-full p-2 mb-8 relative group">
             <!-- Animated rings -->
-            <div class="absolute inset-0 border-4 border-pink-200 rounded-full animate-[spin_10s_linear_infinite]"></div>
-            <div class="absolute inset-2 border-4 border-purple-300 border-dashed rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
+            <div class="absolute inset-0 border-4 border-blue-200 rounded-full animate-[spin_10s_linear_infinite]"></div>
+            <div class="absolute inset-2 border-4 border-cyan-300 border-dashed rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
             
             <div class="w-full h-full rounded-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center overflow-hidden shadow-inner relative z-10">
               <img src="antonio.jpg" alt="CP Antonio Pérez Zavaleta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/300?text=Foto+Antonio';">
@@ -295,9 +297,9 @@
           </div>
           
           <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-2">Antonio Pérez Zavaleta</h2>
-          <p class="text-pink-600 font-bold text-lg mb-8 tracking-widest bg-pink-50 px-4 py-1 rounded-full">CONTADOR PÚBLICO</p>
+          <p class="text-blue-700 font-bold text-lg mb-8 tracking-widest bg-blue-50 px-4 py-1 rounded-full border border-blue-100">CONTADOR PÚBLICO</p>
           
-          <a href="#contacto" class="w-full max-w-xs bg-slate-900 hover:bg-pink-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1 hover:shadow-xl hover:shadow-pink-500/30">
+          <a href="#contacto" class="w-full max-w-xs bg-slate-900 hover:bg-blue-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/30">
             <i data-lucide="phone" class="w-5 h-5"></i> Agendar Cita
           </a>
         </div>
@@ -308,7 +310,7 @@
             <i data-lucide="book-open" class="w-32 h-32 text-slate-900"></i>
           </div>
           <h3 class="text-3xl font-extrabold mb-8 text-slate-900 flex items-center gap-3 relative z-10">
-            <span class="w-10 h-1 bg-pink-500 rounded-full"></span> Conoce al experto
+            <span class="w-10 h-1 bg-blue-600 rounded-full"></span> Conoce al experto
           </h3>
           
           <div class="space-y-6 text-slate-600 text-lg leading-relaxed relative z-10 font-light">
@@ -319,18 +321,18 @@
               Graduado con <strong class="text-slate-900 font-bold">Honores</strong> por la Escuela Superior de Comercio Administración del <strong class="text-slate-900 font-bold">Instituto Politécnico Nacional</strong> (Generación 1998-2002).
             </p>
             <p>
-              Posee <strong class="text-pink-600 font-bold">más de 20 años de experiencia</strong> en áreas de Cuentas por Cobrar y por Pagar. Esta trayectoria le otorga una visión 360º sobre los ingresos y gastos corporativos y personales.
+              Posee <strong class="text-blue-700 font-bold">más de 20 años de experiencia</strong> en áreas de Cuentas por Cobrar y por Pagar. Esta trayectoria le otorga una visión 360º sobre los ingresos y gastos corporativos y personales.
             </p>
             
             <div class="pt-8 mt-8 border-t border-slate-100">
               <h4 class="font-bold text-slate-900 mb-4 uppercase tracking-wider text-sm">Trayectoria en Corporativos</h4>
               <div class="flex flex-wrap gap-2">
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Zapaterías Vazza</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Farmacias Similares</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Grupo Modelo</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Servicio Pan Americano</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Geo Hogares</span>
-                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-pink-300 hover:bg-pink-50 transition-colors cursor-default">Saipem Services</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Zapaterías Vazza</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Farmacias Similares</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Grupo Modelo</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Servicio Pan Americano</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Geo Hogares</span>
+                <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-md text-sm font-medium border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-default">Saipem Services</span>
               </div>
             </div>
           </div>
@@ -352,127 +354,127 @@
 
       <!-- Category Filter -->
       <div class="flex flex-wrap justify-center gap-3 mb-16 reveal-on-scroll delay-100" id="filter-buttons">
-        <button onclick="filterItems('Todos')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-gradient-to-r from-pink-600 to-purple-600 text-white shadow-lg shadow-pink-500/30 border-transparent" data-cat="Todos">Todos</button>
-        <button onclick="filterItems('Básico')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Básico">Básico</button>
-        <button onclick="filterItems('Gestión')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Gestión">Gestión</button>
-        <button onclick="filterItems('Crédito')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Crédito">Crédito</button>
-        <button onclick="filterItems('Prevención')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Prevención">Prevención</button>
-        <button onclick="filterItems('Crecimiento')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Crecimiento">Crecimiento</button>
-        <button onclick="filterItems('Conceptos')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm" data-cat="Conceptos">Conceptos</button>
+        <button onclick="filterItems('Todos')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30 border-transparent" data-cat="Todos">Todos</button>
+        <button onclick="filterItems('Básico')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Básico">Básico</button>
+        <button onclick="filterItems('Gestión')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Gestión">Gestión</button>
+        <button onclick="filterItems('Crédito')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Crédito">Crédito</button>
+        <button onclick="filterItems('Prevención')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Prevención">Prevención</button>
+        <button onclick="filterItems('Crecimiento')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Crecimiento">Crecimiento</button>
+        <button onclick="filterItems('Conceptos')" class="cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm" data-cat="Conceptos">Conceptos</button>
       </div>
 
       <!-- Grid of Terms -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="glossary-grid">
         <!-- Generados en HTML en base al array original -->
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Básico" style="animation-delay: 0s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Básico</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Finanzas Personales</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Básico</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Finanzas Personales</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Administración real y eficiente de los recursos, equilibrando ganancias y gastos para cubrir necesidades a corto, mediano y largo plazo.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Básico" style="animation-delay: 0.05s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Básico</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Patrimonio</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Básico</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Patrimonio</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Conjunto de bienes (tangibles e intangibles), derechos, deudas y obligaciones de una persona.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Básico" style="animation-delay: 0.1s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Básico</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Ingresos</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Básico</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Ingresos</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Recursos que recibe una persona (fijos como sueldos, o variables como comisiones).</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Gestión" style="animation-delay: 0.15s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Gestión</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Presupuesto</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Gestión</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Presupuesto</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Planeación de ingresos y gastos para alcanzar objetivos financieros.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Gestión" style="animation-delay: 0.2s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Gestión</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Gastos</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Gestión</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Gastos</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Salidas de dinero. Pueden ser fijos, variables u hormiga. El gasto es operación, el costo es producción.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crédito" style="animation-delay: 0.25s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crédito</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Deudas</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crédito</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Deudas</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Pueden ser buenas (generan crecimiento) o malas (generan pérdida económica pura).</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Gestión" style="animation-delay: 0.3s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Gestión</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Fondos</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Gestión</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Fondos</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Reservas de dinero con propósito: ahorro, inversión, emergencias o retiro.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crédito" style="animation-delay: 0.35s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crédito</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Préstamos</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crédito</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Préstamos</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Dinero recibido con obligación de pago. Es vital revisar el CAT para conocer el costo real.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Prevención" style="animation-delay: 0.4s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Prevención</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Seguros</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Prevención</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Seguros</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Protección contra pérdidas económicas mediante una póliza.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crecimiento" style="animation-delay: 0.45s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crecimiento</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Inversiones</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crecimiento</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Inversiones</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Uso del dinero para generar ganancias (bienes raíces, acciones, cetes, etc).</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crecimiento" style="animation-delay: 0.5s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crecimiento</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Portafolio</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crecimiento</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Portafolio</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Diversificación de activos para reducir riesgo y aumentar rentabilidad.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crecimiento" style="animation-delay: 0.55s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crecimiento</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Riesgo y Rentabilidad</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crecimiento</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Riesgo y Rentabilidad</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Riesgo: probabilidad de perder. Rentabilidad: capacidad de generar ganancias.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Conceptos" style="animation-delay: 0.6s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Conceptos</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Inflación</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Conceptos</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Inflación</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Aumento de precios con el tiempo que reduce tu poder adquisitivo.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Crédito" style="animation-delay: 0.65s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Crédito</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Crédito y Tarjetas</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Crédito</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Crédito y Tarjetas</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Dinero prestado. Entender la fecha de corte, pago para no generar intereses y el CAT es vital.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Conceptos" style="animation-delay: 0.7s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Conceptos</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Liquidez</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Conceptos</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Liquidez</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Facilidad para convertir tus bienes en dinero en efectivo rápidamente.</p>
         </div>
 
         <div class="glossary-item fade-in-up-anim bg-slate-50 border border-slate-100 p-8 rounded-3xl card-hover-effect group relative overflow-hidden" data-cat="Prevención" style="animation-delay: 0.75s;">
-          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-400 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-          <div class="text-xs font-black text-pink-500 uppercase tracking-widest mb-3">Prevención</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-pink-600 group-hover:to-purple-600 transition-all">Errores y Fraudes</h3>
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-cyan-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+          <div class="text-xs font-black text-blue-600 uppercase tracking-widest mb-3">Prevención</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-cyan-600 transition-all">Errores y Fraudes</h3>
           <p class="text-slate-600 text-sm leading-relaxed font-light">Gastar más de lo que ganas. Cuidado con Phishing y sitios falsos. ¡No compartas datos!</p>
         </div>
 
@@ -481,16 +483,17 @@
   </section>
 
   <!-- Footer / Contact -->
-  <footer id="contacto" class="bg-[#0a0f1c] text-slate-300 py-20 lg:py-24 border-t border-white/10 relative overflow-hidden">
+  <footer id="contacto" class="bg-[#0f172a] text-slate-300 py-20 lg:py-24 border-t border-white/10 relative overflow-hidden">
     <!-- Abstract glow -->
-    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-pink-600/20 filter blur-[100px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-blue-600/10 filter blur-[100px] rounded-full pointer-events-none"></div>
 
     <div class="container mx-auto px-6 relative z-10">
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
         
         <div class="lg:col-span-2">
-          <div class="text-4xl font-extrabold tracking-tighter mb-6 text-white">
-            Hábito<span class="text-pink-500">Financiero</span><span class="text-slate-500">.mx</span>
+          <div class="flex items-center gap-3 text-4xl font-extrabold tracking-tighter mb-6 text-white">
+            <img src="logo.png" alt="Logo" class="h-10 w-auto object-contain grayscale brightness-200" onerror="this.style.display='none'">
+            <div>Hábito<span class="text-blue-500">Financiero</span></div>
           </div>
           <p class="text-slate-400 mb-8 max-w-md text-lg font-light leading-relaxed">
             Asesorías personalizadas para finanzas y estrategias prácticas para maximizar el flujo de efectivo de tu negocio o vida personal.
@@ -502,22 +505,22 @@
           <ul class="space-y-4">
             <li>
               <a href="#servicios" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
-                <i data-lucide="chevron-right" class="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform"></i> Finanzas Personales
+                <i data-lucide="chevron-right" class="w-4 h-4 text-blue-500 group-hover:translate-x-1 transition-transform"></i> Finanzas Personales
               </a>
             </li>
             <li>
               <a href="#negocios" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
-                <i data-lucide="chevron-right" class="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform"></i> Asesoría de Negocios
+                <i data-lucide="chevron-right" class="w-4 h-4 text-blue-500 group-hover:translate-x-1 transition-transform"></i> Asesoría de Negocios
               </a>
             </li>
             <li>
               <a href="#conceptos" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
-                <i data-lucide="chevron-right" class="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform"></i> Plan de Inversión
+                <i data-lucide="chevron-right" class="w-4 h-4 text-blue-500 group-hover:translate-x-1 transition-transform"></i> Plan de Inversión
               </a>
             </li>
             <li>
               <a href="#contacto" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
-                <i data-lucide="chevron-right" class="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform"></i> Gestión de Deudas
+                <i data-lucide="chevron-right" class="w-4 h-4 text-blue-500 group-hover:translate-x-1 transition-transform"></i> Gestión de Deudas
               </a>
             </li>
           </ul>
@@ -525,16 +528,27 @@
 
         <div>
           <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Contacto Directo</h4>
-          <div class="glass-panel bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-pink-500/50 transition-colors">
+          <div class="glass-panel bg-white/5 p-6 rounded-2xl border border-white/10 hover:border-blue-500/50 transition-colors mb-4">
             <p class="font-semibold text-white mb-3">CP Antonio Pérez Zavaleta</p>
-            <a href="tel:5641267539" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 hover:from-pink-300 hover:to-purple-300 flex items-center gap-3 transition-all mb-4">
-              <i data-lucide="phone" class="w-6 h-6 text-pink-400"></i>
+            <a href="tel:5641267539" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-300 hover:to-cyan-300 flex items-center gap-3 transition-all">
+              <i data-lucide="phone" class="w-6 h-6 text-blue-400"></i>
               56 4126 7539
             </a>
-            <a href="mailto:contacto@habitofinanciero.mx" class="text-sm text-slate-400 hover:text-pink-400 flex items-center gap-2 transition-colors">
-              <i data-lucide="mail" class="w-4 h-4"></i> Enviar correo
-            </a>
           </div>
+
+          <!-- Nueva caja llamativa para el correo -->
+          <a href="mailto:antonio_pzdf@yahoo.com" class="group relative block p-1 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(6,182,212,0.4)]">
+            <div class="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
+            <div class="relative flex items-center gap-4 bg-[#0a0f1c] group-hover:bg-transparent p-4 rounded-xl transition-colors duration-300">
+              <div class="bg-blue-500/20 group-hover:bg-white/20 p-3 rounded-full transition-colors duration-300 shrink-0">
+                <i data-lucide="mail" class="w-6 h-6 text-cyan-400 group-hover:text-white transition-colors"></i>
+              </div>
+              <div class="overflow-hidden">
+                <p class="text-xs text-blue-400 group-hover:text-blue-100 uppercase tracking-widest font-bold mb-0.5 transition-colors">Envíame un correo</p>
+                <p class="text-base sm:text-lg font-bold text-white truncate">antonio_pzdf@yahoo.com</p>
+              </div>
+            </div>
+          </a>
         </div>
 
       </div>
@@ -542,7 +556,7 @@
       <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500 font-light">
         <p>&copy; <span id="year"></span> Hábito Financiero. Todos los derechos reservados.</p>
         <p class="mt-4 md:mt-0 flex items-center gap-2">
-          Hecho con <span class="text-pink-500">♥</span> para tu salud financiera.
+          Hecho con <span class="text-blue-500">♥</span> para tu salud financiera.
         </p>
       </div>
     </div>
@@ -575,22 +589,17 @@
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('navbar');
       const text1 = document.getElementById('nav-text-1');
-      const text2 = document.getElementById('nav-text-2');
       
       if (window.scrollY > 50) {
         nav.classList.remove('bg-transparent', 'py-6');
         nav.classList.add('bg-white/80', 'backdrop-blur-lg', 'shadow-sm', 'py-4');
         text1.classList.remove('text-white');
         text1.classList.add('text-slate-900');
-        text2.classList.remove('text-white/70');
-        text2.classList.add('text-slate-500');
       } else {
         nav.classList.add('bg-transparent', 'py-6');
         nav.classList.remove('bg-white/80', 'backdrop-blur-lg', 'shadow-sm', 'py-4');
         text1.classList.add('text-white');
         text1.classList.remove('text-slate-900');
-        text2.classList.add('text-white/70');
-        text2.classList.remove('text-slate-500');
       }
     });
 
@@ -609,13 +618,13 @@
 
     // Función de filtrado para el Diccionario Financiero
     function filterItems(category) {
-      // 1. Actualizar los estilos de los botones
+      // 1. Actualizar los estilos de los botones (Adaptados a azules corporativos)
       const buttons = document.querySelectorAll('.cat-btn');
       buttons.forEach(btn => {
         if (btn.dataset.cat === category) {
-          btn.className = "cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-gradient-to-r from-pink-600 to-purple-600 text-white shadow-lg shadow-pink-500/30 border-transparent";
+          btn.className = "cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30 border-transparent";
         } else {
-          btn.className = "cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-pink-300 hover:text-pink-600 shadow-sm";
+          btn.className = "cat-btn px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105 bg-white text-slate-600 border border-slate-200 hover:border-blue-400 hover:text-blue-600 shadow-sm";
         }
       });
 
@@ -624,7 +633,6 @@
       items.forEach(item => {
         if (category === 'Todos' || item.dataset.cat === category) {
           item.style.display = 'block';
-          // Pequeño truco para reiniciar la animación CSS
           item.style.animation = 'none';
           item.offsetHeight; // forzar reflujo
           item.style.animation = null;
